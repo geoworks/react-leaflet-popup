@@ -30,7 +30,7 @@ const ReactLeafletPopup = L.Popup.extend({
 
   onRemove(map) {
     this._container.style.transition = 'none';
-    ReactDOM.unmountComponentAtNode(this._wrapper);
+    ReactDOM.unmountComponentAtNode(this._contentNode);
     L.Popup.prototype.onRemove.call(this, map);
   },
 
@@ -80,7 +80,7 @@ const ReactLeafletPopup = L.Popup.extend({
       }
 
       case REACT_MODE_ELEMENT: {
-        ReactDOM.render(this._reactElement, this._wrapper, () => {
+        ReactDOM.render(this._reactElement, this._contentNode, () => {
           this.fire(REACT_RENDERED_EVENTNAME);
         });
         return this;
@@ -91,7 +91,7 @@ const ReactLeafletPopup = L.Popup.extend({
             this._reactComponent,
             this._reactComponentProps
         );
-        ReactDOM.render(tmpReactElement, this._wrapper, () => {
+        ReactDOM.render(tmpReactElement, this._contentNode, () => {
           this.fire(REACT_RENDERED_EVENTNAME);
         });
         return this;

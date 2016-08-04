@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-popup",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "React-rendered popup for your Leaflet maps",
   "main": "index.js",
   "engines": {
