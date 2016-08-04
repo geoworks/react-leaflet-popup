@@ -29,7 +29,7 @@ const ReactLeafletPopup = L.Popup.extend({
   },
 
   onRemove(map) {
-    // map._fadeAnimated = false;
+    this._container.style.transition = 'none';
     ReactDOM.unmountComponentAtNode(this._wrapper);
     L.Popup.prototype.onRemove.call(this, map);
   },
