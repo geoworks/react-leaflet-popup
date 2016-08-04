@@ -1,3 +1,3 @@
-import ReactLeafletPopup from './scr';
+import ReactLeafletPopup from './ReactLeafletPopup';
 
 module.exports = ReactLeafletPopup;
