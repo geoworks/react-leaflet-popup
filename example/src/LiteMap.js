@@ -18,12 +18,14 @@ const LiteMap = () => (
           [L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png')]
         }
         onMapCreate={lmap => {
-          lmap.leafletMap.on('click', e => {
-            lmap.leafletMap.openPopup(new ReactPopup({
-              reactComponent: MyPopupComponent,
-              reactComponentProps: { latlng: e.latlng },
-            }).setLatLng(e.latlng));
-          });
+          lmap.leafletMap.addLayer(
+            L.circleMarker(L.latLng(44, 56)).bindPopup(
+              new ReactPopup({
+                reactComponent: MyPopupComponent,
+                reactComponentProps: { latlng: L.latLng(44, 56) },
+              })
+            )
+          );
         }}
       />
     </div>
