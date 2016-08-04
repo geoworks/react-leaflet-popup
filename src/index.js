@@ -1,1 +1,1 @@
-module.exports = require('./ReactLeafletPopup').default;
+module.exports = require('./ReactLeafletPopup');

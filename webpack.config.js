@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'react-leaflet-popup.js',
-    libraryTarget: 'commonjs',
+    libraryTarget: 'commonjs2',
   },
   module: {
     loaders: [
