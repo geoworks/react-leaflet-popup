@@ -38,7 +38,7 @@
     "test": "eslint .",
     "example": "node example/server",
     "build": "webpack",
-    "dopublish": "bash -c\"./scripts/publish\""
+    "dopublish": "bash -c \"./scripts/publish\""
   },
   "author": "Sergey Burmisov (github.com/burmisov)",
   "license": "MIT",
