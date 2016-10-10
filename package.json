@@ -1,6 +1,6 @@
 {
   "name": "react-leaflet-popup",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "React-rendered popup for your Leaflet maps",
   "main": "index.js",
   "engines": {
@@ -38,7 +38,7 @@
     "test": "eslint .",
     "example": "node example/server",
     "build": "webpack",
-    "dopublish": "./scripts/publish"
+    "dopublish": "scripts/publish"
   },
   "author": "Sergey Burmisov (github.com/burmisov)",
   "license": "MIT",
